@@ -32,15 +32,31 @@ function HeroHome() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Make your website <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">wonderful</span></h1>
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">All your <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">recipes</span> in one place</h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Import your recipes and search through them on all your devices</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Start free trial</a>
+                  <a href="#0">
+                    <img height="48px" width="144px" src={require('../images/appstore-badge.svg')} alt="App Store logo" />
+                  </a>
                 </div>
+                &nbsp;
                 <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">Learn more</a>
+                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="https://loving-kowalevski-577e95.netlify.app/signup">
+                    Sign up&nbsp;&nbsp;
+                    <svg className="text-gray-400 ml-2 -mr-1" fill="none" stroke="rgb(223, 223, 223)" viewBox="0 0 420 420" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m209 15a195 195 0 1 0 2 0z" stroke-width="26" />
+                      <path d="m210 15v390m195-195h-390m44-120a260 260 0 0 0 302 0m0 240a260 260 0 0 0-302 0m136-310a250 250 0 0 0 0 382m30 0a250 250 0 0 0 0-382" stroke-width="18" />
+                    </svg>
+                  </a>
+                </div>
+                &nbsp;
+
+                <div>
+                  <a href="https://drive.google.com/file/d/1EDFn4O_8TIdPj4cFKw-rZV7ADJuZMEv7/view?usp=sharing">
+                    <img height="48px" width="161.5px" src={require('../images/google-play-badge.png')} alt="Play Store logo" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -50,7 +66,7 @@ function HeroHome() {
           <div>
             <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="450">
               <div className="flex flex-col justify-center">
-                <img className="mx-auto" src={require('../images/hero-image.png')} width="768" height="432" alt="Hero" />
+                <img className="mx-auto" src={require('../images/list.png')} width="768" height="432" alt="Hero" />
                 <svg className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto" width="768" height="432" viewBox="0 0 768 432" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                   <defs>
                     <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="hero-ill-a">
@@ -68,7 +84,7 @@ function HeroHome() {
                       <stop stopColor="#81E6D9" offset="25.871%" />
                       <stop stopColor="#338CF5" offset="100%" />
                     </radialGradient>
-                    <circle id="hero-ill-d" cx="384" cy="216" r="64" />
+                    {/* <circle id="hero-ill-d" cx="384" cy="216" r="64" /> */}
                   </defs>
                   <g fill="none" fillRule="evenodd">
                     <circle fillOpacity=".04" fill="url(#hero-ill-a)" cx="384" cy="216" r="128" />
@@ -80,13 +96,13 @@ function HeroHome() {
                   </g>
                 </svg>
               </div>
-              <button className="absolute top-full flex items-center transform -translate-y-1/2 bg-white rounded-full font-medium group p-4 shadow-lg" onClick={(e) => { e.preventDefault(); setVideoModalOpen(true); }} aria-controls="modal">
+              {/* <button className="absolute top-full flex items-center transform -translate-y-1/2 bg-white rounded-full font-medium group p-4 shadow-lg" onClick={(e) => { e.preventDefault(); setVideoModalOpen(true); }} aria-controls="modal">
                 <svg className="w-6 h-6 fill-current text-gray-400 group-hover:text-blue-600 flex-shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 2C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12z" />
                   <path d="M10 17l6-5-6-5z" />
                 </svg>
                 <span className="ml-3">Watch the full video (2 min)</span>
-              </button>
+              </button> */}
             </div>
 
             {/* Modal */}

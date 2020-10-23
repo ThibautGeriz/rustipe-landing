@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Dish out",
+  "name": "Import your recipes and search through them on all your devices",
   "icons": [
     {
       "src": "favicon.ico",
