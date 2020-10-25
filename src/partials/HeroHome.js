@@ -37,7 +37,7 @@ function HeroHome() {
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Import your recipes and search through them on all your devices</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a href="#0">
+                  <a href="https://expo.io/@thibautgery/projects/rustipe">
                     <img height="48px" width="144px" src={require('../images/appstore-badge.svg')} alt="App Store logo" />
                   </a>
                 </div>
